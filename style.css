@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Layout Styling */
+
+header {
+    height: 185px;
+}
+
+.headTopLeft, .headTopRight {
+    width: 50%;
+    float: left;
+    height: 50px;
+}
+
+.leftSide {
+    height: 800px;
+    width: 15%;
+    border-top: 1px solid lightgrey;
+}
+
+.lsTop, .lsBottom {
+    width: 100%;
+    padding: 5%;
+}
+
+.middle, .rightSide {
+    height: 800px;
+    width: 42.5%;
+    border-top: 1px solid lightgrey;
+}
+
+.rightSide {
+    border-left: 1px solid lightgray;
+}
+
+.middleVideo, .middleStory, .middleBottom {
+    width: 100%;
+    padding: 1%;
+}
+
+.middleVideo {
+    height: 280px;
+}
+
+.leftSide, .middle, .rightSide {
+    float: left;
+}
+
+/* Header Stlyling */
+
+.headTop {
+    overflow: hidden;
+}
+
+.headTopLeft li {
+    float: left;
+    list-style: none;
+    width: 15%;
+    margin-top: 1%;
+}
+
+.headTopLeft a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem
+}
+
+.headTopRight {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.headTopRight button {
+    height: 75%;
+    margin-right: 1%;
+    background: #6288a5;
+    color: white;
+    border-radius: 5px;
+}
+
+.headMid {
+    text-align: center;
+}
+
+.headMid ul {
+    margin: 0 25%;
+}
+
+.headMid li {
+    float: left;
+    list-style: none;
+    width: 18%
+}
+
+.headBottom {
+    clear: both;
+    text-align: center;
+}
+
+.nav {
+    overflow: hidden;
+    width: 88%;
+    margin: auto;
+}
+
+.show {
+    display: hidden;
+}
+
+.headBottom ul {
+    border-top: 2px solid black;
+}
+
+.headBottom li {
+    float: left;
+    list-style: none;
+    width: 5%;
+    margin-top: 1%;
+}
+
+.headBottom a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Left Side Styling */
+
+.lsTop h4 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-color: grey;
+}
+
+.lsTop h2 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.lsTop p {
+    color: grey;
+    text-transform: uppercase;
+}
+
+.lsTop ul {
+    padding: 0 8%;
+}
+
+.lsTop li {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.lsBottom h4 {
+    text-transform: uppercase;
+    color: grey;
+}
+
+.lsBottom h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.lsBottom h3+p {
+    color: grey;
+    text-transform: uppercase;
+}
+
+.lsBottom p+p {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+span {
+    color:red;
+}
+
+/* Middle Styling */
+
+.middleVideo {
+    background: url(bird.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middleStory h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
+
+.middleStory p {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.middleStory ul {
+    margin: 0 0 6% 0;
+}
+
+.middleStory li {
+    float: left;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 25%;
+}
+
+.middleStory a {
+    color: black;
+    text-decoration: none;
+}
+
+.middleBottom h3 {
+    font-size: 1.5rem;
+}
+
+.middleBottom img {
+    height: 75px;
+    float: right;
+}
+
+.middleBottom img+p {
+    color: grey;
+    text-transform: uppercase;
+}
+
+.twoP {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.threeP {
+    color: blue;
+}
+
+.middleBottom li {
+    font-weight: 200;
+}
+
+/* Right Side Styling */
+
+.opinionPages h3 {
+    text-align: center;
+    padding: 0 auto;
+}
+
+.opinionPages h4 {
+    margin: 0;
+}
+
+.opinionLeft, .opinionRight {
+    float: left;
+    width: 50%;
+    padding: 3%;
+}
+
+.opinionPages img {
+    height: 60px;
+    float: right;
+}
+
+.opinionPages {
+    font-size: 1.5rem;
+}
+
+.opinionRight {
+    border-left: 1px solid lightgrey;
+}
+
+.opinionPages span {
+    color: lightgrey;
+    margin: 0;
+}
+
+.rightSideMiddle>section {
+    float: left;
+    width: 50%;
+    padding: 0 13%;
+}
+
+.rightSideMiddle {
+    border-top: 1px solid lightgrey;
+    clear: both;
+    margin: 0 3%;
+}
+
+.rightSideList {
+    border-top: 1px solid lightgrey;
+    clear: both;
+    margin: 0 3%;
+}
+
+.rightSideList section {
+    width: 100%;
+    clear: both;
+}
+
+.rightSideList img {
+    height: 60px;
+    float: right;
+}
+
+.cross {
+    float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .leftSide {
+        display: none;
+    }
+
+    .middle {
+        width: 50%;
+    }
+
+    .rightSide {
+        width: 50%;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 768px) {
+    .headMid ul {
+        margin: 0 8%;
+    }
+
+    .headBottom li {
+        width: 5%;
+        margin-top: 2%;
+    }
+
+    .leftSide, .rightSideList {
+        display: none;
+    }
+
+    .middle {
+        width: 50%;
+    }
+
+    .rightSide {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 426px) {
+    .rightSide, .leftSide, .rightSideList, .hidden {
+        display: none;
+    }
+    
+    .middle {
+        width: 100%;
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    .headTopLeft li {
+        width: 45%;
+    }
+
+    .headMid ul {
+        margin: 0;
+    }
+
+    .headMid li {
+        width: 20%;
+    }
+}
+
+@media all and (max-width: 379px) {
+    .headTopRight button {
+        height: 50%;
+    }
+
+    .headTopLeft li {
+        width: 50%;
+    }
+
+    .headMid ul {
+        margin: 0;
+    }
+
+    .logo {
+        height: 56px;
+    }
+}
+
